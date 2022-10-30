@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Chat Boat</title>
+        <style>
+            body{
+                background-color:  rgb(0, 0, 0);
+            }
+            img{
+                width: 200px; 
+                height: 100px;
+                margin-left: 10px;
+            }
+            h2{
+                text-align:center;
+                color: rgb(224, 39, 104);
+                font-size:5pc;
+            }
+            h3{
+                text-align:center;
+                color:rgb(99, 30, 225);
+                font-size:2.5pc;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Hospitals</h2>
+        <h2><img src="https://sb1.s3.jp-tok.cloud-object-storage.appdomain.cloud/s11.jpg"></h2>
+        <p><h3>We are providing the details for your queries</h3>
+              <h3> Click  the chatbot </h3> 
+     </p>
+     <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "5f825dd1-4119-4426-afe6-3f880b2da789", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "4f6caa5f-c21e-4ad5-94e4-3086a8d5a533", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    </body>
+</html>
