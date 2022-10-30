@@ -1,0 +1,29 @@
+body{
+    background-color:rgb(53, 101, 244);
+}
+#pic{
+    margin-top: 10%;
+    margin: 5%;
+    line-height:0;
+    column-count:5;
+    column-gap:5px;
+    background-color:rgb(53, 101, 244);
+}
+#pic img{
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px;
+}
+h2{
+    text-align: center;
+    font-family: Courier;
+    font-size: 50px;
+    margin-top: 3%;
+    font-weight: bolder;
+    color: rgb(209, 17, 107);
+}
+h3{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkgoldenrod;
+}
