@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Chat Boat</title>
+        <style>
+            body{
+                background-color:  rgb(160, 233, 158);
+            }
+            img{
+                width: 200px; 
+                height: 100px;
+                margin-left: 10px;
+            }
+            h2{
+                text-align:center;
+                color: rgba(71, 9, 218, 0.89);
+                font-size:4pc;
+            }
+            h3{
+                text-align:center;
+                color:rgb(238, 6, 141);
+                font-size:2.5pc;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="margin-left: 500px;">HOSPITAL<button style="margin-left: 350px;">
+            <a href="/service"style="text-decoration: none;position: absolute; top: 10px; right: 20px; background-color: red; color: white; padding: 5px 20px; border-radius: 5px;">GO BACK</a>
+            <div class="bg-1"></div>
+        </button></h2>
+        <h2><img src="https://mani07.s3.jp-tok.cloud-object-storage.appdomain.cloud/pexels-pixabay-263402.jpg"></h2>
+        <p><h3>WE ARE PROVIDING THE DETAILS FOR YOUR QUERIES</h3>
+              <h3> Click  the chatbot </h3> 
+     </p>
+         <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "4f8894e3-1817-41e3-bf8b-a5d4b9b2197a", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "ba115cc6-e2d6-4d6b-beea-74977285d64c", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    </body>
+</html>
